@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Семантический поиск</title>
+</head>
+<body>
+    <h1 align="center"> Семантический поиск к Вашим услугам!</h1>
+
+    <center>
+    <form name="test" method="get" action="find">
+        <input name="title" type="text" size="45" placeholder="axon.txt">        
+        <input type="submit" value="Find neighbours">
+	
+	<p>Сколько соседей ищем? <input type="number" size="3" name="top" min="1" max="50" value="1"></p>
+
+        <p> Каким методом векторизации воспользоваться?
+		<select size="2" multiple name="method">
+		<option value="vecmap">VecMap</option>
+		<option selected value="muse">MUSE</option>
+		<option selected value="proj">Projection</option>
+		<option selected value="trans">Translation</option>
+		</select>
+        </p>
+	
+    </form>
+    </center>
+<h1 align="center">Результат:</h1>
+<p>%s</p>
+</body>
+</html>
